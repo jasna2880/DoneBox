@@ -1,16 +1,31 @@
-# React + Vite
+# DoneBox 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DoneBox is a modern, minimalist Productivity & Task Management application built with **React**. It helps you manage your daily tasks and quick thoughts through an intuitive Dashboard and an organized Inbox.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Personalized Dashboard**: A greeting and search system tailored to the user.
+- **Advanced Task Management**: Add, complete, and prioritize tasks with visual progress tracking.
+- **Smart Inbox**: Separate your quick **Notes** (with titles) from **Tasks** (with checkboxes).
+- **Persistent Storage**: All your data is saved locally using `localStorage`, so it stays even after a page refresh.
+- **Responsive Design**: Clean and premium UI that works across different screen sizes.
+- **Confetti Effects**: Celebratory feedback when you complete a task!
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: React.js
+- **Styling**: CSS3 (Custom Styles)
+- **Icons**: React Icons
+- **Effects**: Canvas Confetti
+- **Deployment**: Vercel
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/jasna2880/DoneBox.git](https://github.com/jasna2880/DoneBox.git)
+
+   ##📸 Screenshots:
+   <img width="1901" height="938" alt="Screenshot 2026-02-09 153805" src="https://github.com/user-attachments/assets/84377902-b965-4ab1-9810-aacfbc5d635a" />
+
+   
