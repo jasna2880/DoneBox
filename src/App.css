@@ -49,6 +49,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 868px;
   margin-bottom: 30px;
 }
 
@@ -75,6 +76,7 @@
   background: linear-gradient(135deg, #ede9ff 0%, #f3f0ff 100%);
   padding: 35px; border-radius: 25px; display: flex;
   justify-content: space-between; align-items: center; margin-bottom: 35px;
+      width: 874px;
 }
 .hero-text h2 { font-size: 28px; margin-bottom: 10px; }
 .progress-container { display: flex; align-items: center; gap: 15px; margin: 15px 0; }
@@ -87,7 +89,7 @@
 .hero-img img { width: 200px; }
 
 /* --- FILTER & CLEAR ALL --- */
-.filter-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.filter-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;    width: 864px; }
 .filter-chips { display: flex; gap: 12px; }
 .chip {
   padding: 10px 20px; border-radius: 12px; border: 1px solid #eee;
@@ -100,6 +102,7 @@
 .advanced-input-box {
   background: white; padding: 25px; border-radius: 22px;
   margin-bottom: 35px; box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+      width: 876px;
 }
 .advanced-input-box input[type="text"] {
   width: 100%; padding: 15px; border: 1px solid #f0f0f0;
@@ -109,7 +112,8 @@
 .add-main-btn { background: var(--primary); color: white; border: none; padding: 12px 25px; border-radius: 12px; font-weight: bold; cursor: pointer; }
 
 /* --- TASK CARDS --- */
-.task-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
+.task-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px;    width: 876px;
+ }
 .task-card-mini {
   background: white; padding: 25px; border-radius: 20px;
   border-left: 5px solid transparent; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.02);
@@ -273,4 +277,970 @@
 .done-btn:hover {
   background: var(--primary);
   color: white;
+}
+/* Logout ബട്ടൺ മാത്രം ചുവപ്പിൽ വരാൻ */
+.logout-btn {
+  color: #ff4d4d !important; /* ആ സ്ക്രീൻഷോട്ടിലെ അതേ റെഡ് ഷേഡ് */
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* മൗസ് അതിന് മുകളിൽ കൊണ്ടുപോകുമ്പോൾ അല്പം ഡാർക്ക് ആകാൻ */
+.logout-btn:hover {
+  color: #d93636 !important;
+  background-color: rgba(255, 77, 77, 0.1); /* നേരിയ ചുവപ്പ് ബാക്ക്ഗ്രൗണ്ട് */
+  border-radius: 8px;
+}
+
+/* സെറ്റിംഗ്‌സ് ടാബിന് പഴയ ഗ്രേ നിറം തന്നെ കൊടുക്കാം */
+.settings-btn {
+  color: #666;
+  margin-top: 5px;
+}
+.right-sidebar {
+  width: 300px;
+  background-color: #f8faff; /* നേരിയ ബ്ലൂ ടിന്റ് */
+  padding: 30px 20px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.premium-profile-card {
+  background: white;
+  border-radius: 24px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(108, 92, 231, 0.05);
+}
+
+.profile-img-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(45deg, #6c5ce7, #a29bfe); /* പർപ്പിൾ ഗ്രേഡിയന്റ് ബോർഡർ */
+}
+
+.main-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.profile-details h4 {
+  font-size: 18px;
+  color: #2d3436;
+  margin: 10px 0 5px;
+  font-weight: 700;
+}
+
+.profile-details p {
+  font-size: 14px;
+  color: #b2bec3;
+  margin-bottom: 20px;
+}
+
+.view-profile-btn {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.view-profile-btn:hover {
+  background-color: #5b4bc4;
+  box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+/* Right Sidebar Styling */
+/* Right Sidebar മൊത്തത്തിലുള്ള ലുക്ക് */
+.right-sidebar {
+  width: 320px;
+  background-color: #f8f9fe; /* ലൈറ്റ് ബാക്ക്ഗ്രൗണ്ട് */
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* ഓരോ സെക്ഷനും ഒരു വൈറ്റ് കാർഡ് പോലെ തോന്നിപ്പിക്കാൻ */
+.profile-container-premium, 
+.calendar-card-premium, 
+.reminders-section {
+  background: #ffffff;
+  border-radius: 24px; /* റൗണ്ട് കോർണർ */
+  padding: 20px;
+  
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03); /* നേർത്ത ഷാഡോ */
+}
+
+/* Reminders സെക്ഷൻ പ്രത്യേകം ശ്രദ്ധിക്കുക */
+.reminders-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.reminders-section h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.reminder-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+}
+
+.bell-icon {
+  width: 40px;
+  height: 40px;
+  background: #f0f2f5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.rem-text h6 {
+  font-size: 14px;
+  margin: 0;
+  color: #444;
+  font-weight: 600;
+}
+
+.rem-text p {
+  font-size: 11px;
+  margin: 2px 0 0 0;
+  color: #999;
+}
+/* Profile Card - Image set style */
+.profile-container-premium {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Avatar with the light blue background frame from screenshot */
+.avatar-frame {
+  width: 120px;
+  height: 120px;
+  background-color: #eef2ff; /* Very light blue tint */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 1px solid #e0e7ff;
+}
+
+.avatar-frame img {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Typography alignment */
+.user-meta h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.user-meta p {
+  font-size: 13px;
+  color: #a0a0a0;
+  margin: 4px 0 20px 0;
+}
+
+/* The exact blue-purple button from image */
+.profile-action-btn {
+  background-color: #7c7cf8; 
+  color: white;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(124, 124, 248, 0.25);
+}
+
+.profile-action-btn:hover {
+  background-color: #6a6af0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 124, 248, 0.35);
+}
+/* Right Sidebar Styling */
+.right-sidebar {
+  width: 320px;
+  height: 100vh;
+  background-color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #f0f0f0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+/* Profile Card - Image set style */
+.profile-container-premium {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+    margin-bottom: -27px;
+}
+
+/* Avatar with the light blue background frame from screenshot */
+.avatar-frame {
+  width: 120px;
+  height: 120px;
+  background-color: #eef2ff; /* Very light blue tint */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  border: 1px solid #e0e7ff;
+}
+
+.avatar-frame img {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Typography alignment */
+.user-meta h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.user-meta p {
+  font-size: 13px;
+  color: #a0a0a0;
+  margin: 4px 0 20px 0;
+}
+
+/* The exact blue-purple button from image */
+.profile-action-btn {
+  background-color: #7c7cf8; 
+  color: white;
+  border: none;
+  padding: 10px 45px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(124, 124, 248, 0.25);
+}
+
+.profile-action-btn:hover {
+  background-color: #6a6af0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 124, 248, 0.35);
+}
+.task-date-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #8e8e8e;
+  margin: 10px 0; /* ടൈറ്റിലിനും ബട്ടണിനും ഇടയിൽ സ്ഥലം നൽകാൻ */
+}
+
+.task-date-info svg {
+  color: #6c5ce7; /* കലണ്ടർ ഐക്കണിന് ചെറിയ പർപ്പിൾ നിറം */
+}
+/* Calendar Widget Styling */
+.calendar-card-premium {
+  width: 100%;
+  background: #ffffff;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.cal-nav-btn {
+  background: none;
+  border: none;
+  color: #a0a0a0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  text-align: center;
+  font-size: 11px;
+  color: #a0a0a0;
+}
+
+.calendar-days-grid span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Today's highlighting (The red circle in your image) */
+.today-circle {
+  background-color: #ff7675; /* Soft red from image */
+  color: white !important;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Blue dots for events */
+.active-dot {
+  background-color: #eef2ff;
+  color: #7c7cf8 !important;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.event-dot::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #ff7675;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.fade-day {
+  color: #e0e0e0;
+}
+
+/* Reminders Styling */
+.reminders-section {
+  width: 100%;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.reminders-section h5 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.reminder-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.bell-icon {
+  width: 35px;
+  height: 35px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.rem-text h6 {
+  font-size: 12px;
+  margin: 0;
+  color: #444;
+}
+
+.rem-text p {
+  font-size: 10px;
+  color: #a0a0a0;
+  margin: 2px 0 0 0;
+}
+/* Right Sidebar Container */
+.right-sidebar {
+  padding: 20px;
+  background-color: #fcfcfd; /* Very light grey */
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Profile Section Styling */
+.profile-container-premium {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.avatar-frame img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #6c5ce7;
+  padding: 3px;
+}
+
+/* Calendar Card Styling */
+.calendar-card-premium {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  text-align: center;
+}
+
+.calendar-days-grid span {
+  font-size: 12px;
+  padding: 8px 0;
+  display: block;
+  color: #666;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+/* Specific Calendar Markers */
+.today-circle {
+  background: #ff7675 !important;
+  color: white !important;
+  font-weight: bold;
+}
+
+.active-dot {
+  background: #eef2ff;
+  color: #6c5ce7 !important;
+}
+
+/* Reminders Styling */
+.reminders-section {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  MARGIN-TOP: -8PX;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.reminder-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.bell-icon {
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.inbox-page-container {
+  padding: 20px;
+  animation: fadeIn 0.3s ease-in; /* വരുന്നത് ഒന്ന് സ്മൂത്ത് ആകാൻ */
+}
+
+.white-card-inbox {
+  background: white;
+  border-radius: 25px;
+  padding: 40px;
+  min-height: 400px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.inbox-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+}
+
+.white-card-inbox {
+  background: white;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+}
+
+.inbox-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 20px;
+}
+
+.inbox-empty-state h3 {
+  margin-top: 20px;
+  color: #2d3436;
+}
+
+.inbox-empty-state p {
+  color: #888;
+}
+/* മെയിൻ കണ്ടന്റ് ഏരിയ ശരിയാക്കാൻ */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  margin-right: 320px; /* സൈഡ്‌ബാറിന് സ്ഥലം വിട്ടു കൊടുക്കുന്നു */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ഉള്ളിലെ സാധനങ്ങൾ സെന്ററിൽ വരാൻ */
+}
+
+/* ഇൻബോക്സ് കണ്ടെയ്നർ */
+.inbox-page-container {
+  width: 100%;
+  max-width: 900px; /* ബോക്സ് വല്ലാതെ വലുതാകാതിരിക്കാൻ */
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* ഇൻബോക്സ് വൈറ്റ് കാർഡ് */
+.white-card-inbox {
+  background: white;
+  width: 100%;
+  border-radius: 30px;
+  padding: 60px 40px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f0f0f0;
+}
+/* മെയിൻ കണ്ടന്റിന് മാത്രം ബാധകമാക്കാൻ */
+.main-content {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.main-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.main-content {
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.right-sidebar {
+  width: 320px;
+  height: 100vh; /* സ്ക്രീനിന്റെ അത്രയും ഉയരം */
+  background-color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 1px solid #f0f0f0;
+  
+  /* ഇതാണ് പ്രധാന മാറ്റം */
+  position: fixed; 
+  right: 0;
+  top: 0;
+  z-index: 100; /* മറ്റുള്ളവയുടെ മുകളിൽ നിൽക്കാൻ */
+  overflow-y: auto; /* ഇതിനുള്ളിൽ ഒരുപാട് ഐറ്റംസ് വന്നാൽ മാത്രം സ്ക്രോൾ ആവാൻ */
+  scrollbar-width: none; /* സ്ക്രോൾ ബാർ കാണാതിരിക്കാൻ */
+}
+
+/* ഇതിനുള്ളിലെ സ്ക്രോൾ ബാറും ഹൈഡ് ചെയ്യുന്നു */
+.right-sidebar::-webkit-scrollbar {
+  display: none;
+}
+/* പഴയ floating-plus-btn മാറ്റി ഇത് ചേർക്കുക */
+.floating-plus-btn {
+  position: absolute;
+  bottom: 40px;      /* ബോക്സിന്റെ അടിയിൽ നിന്ന് അല്പം മുകളിലേക്ക് */
+  right: 40px;       /* വലത് വശത്ത് നിന്ന് അല്പം ഉള്ളിലേക്ക് */
+  width: 60px;       /* വലിപ്പം കൂട്ടി */
+  height: 60px;
+  background: #7c7cf8; /* നിന്റെ പർപ്പിൾ കളർ */
+  color: white;
+  border: none;
+  border-radius: 50%;  /* വട്ടത്തിൽ വരാൻ */
+  font-size: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(124, 124, 248, 0.4); /* നല്ലൊരു ഷാഡോ */
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 999;
+}
+
+.floating-plus-btn:hover {
+  transform: scale(1.1) rotate(90deg); /* മൗസ് വെക്കുമ്പോൾ ഒന്ന് കറങ്ങും */
+  background: #6a6af0;
+}
+
+/* ഇതിന്റെ കൂടെ കാർഡിന് ഇത് കൂടി ഉണ്ടെന്ന് ഉറപ്പാക്കുക */
+.white-card-inbox {
+  position: relative; /* ഇതിനകത്ത് വേണം ബട്ടൺ വരാൻ */
+  min-height: 500px;
+  padding-bottom: 100px; 
+      width: 811PX;
+      
+      /* ബട്ടണിന് സ്ഥലം കൊടുക്കാൻ */
+}
+/* ഇൻപുട്ട് കണ്ടെയ്നർ */
+.inbox-input-wrapper {
+  background: #f8f9ff;
+  padding: 25px;
+  border-radius: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border: 1px solid #e0e4ff;
+  box-shadow: 0 10px 25px rgba(124, 124, 248, 0.05);
+}
+
+/* Note/Task സെലക്ട് ചെയ്യുന്ന ബട്ടണുകൾ */
+.type-selector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.type-selector button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  background: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.type-selector button.active {
+  background: #7c7cf8;
+  color: white;
+  border-color: #7c7cf8;
+  box-shadow: 0 5px 15px rgba(124, 124, 248, 0.3);
+}
+
+/* ഇൻപുട്ട് ഫീൽഡും ആഡ് ബട്ടണും */
+.inbox-input-field {
+  display: flex;
+  gap: 10px;
+}
+
+.inbox-input-field input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid #edf0f7;
+  outline: none;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+.inbox-input-field input:focus {
+  border-color: #7c7cf8;
+}
+
+.inbox-input-field button {
+  padding: 0 25px;
+  background: #7c7cf8;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.inbox-input-field button:hover {
+  background: #6a6af0;
+}
+
+/* ലിസ്റ്റിലെ ഐറ്റം കാർഡുകൾ */
+.inbox-item-card {
+  background: white;
+  padding: 18px;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  border-left: 6px solid #ddd;
+}
+
+.inbox-item-card.note { border-left-color: #ffcc00; }
+.inbox-item-card.task { border-left-color: #7c7cf8; }
+
+.type-tag {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  margin-bottom: 4px;
+  display: block;
+}
+.note-title-input {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.note-display-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #7c7cf8;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #888;
+}
+.task-checkbox {
+  margin-right: 15px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.note-display-title {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2d3436;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: #b2bec3;
+}/* Inbox Container */
+.white-card-inbox {
+  background: #ffffff;
+  border-radius: 30px;
+  padding: 40px;
+  position: relative;
+  min-height: 550px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+/* Input Wrapper Styling */
+.inbox-input-wrapper {
+  background: #f9faff;
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #eef0ff;
+}
+
+.type-selector button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.type-selector button.active {
+  background: #7c7cf8;
+  color: white;
+}
+
+.inbox-input-field input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 10px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  outline: none;
+}
+
+.inbox-input-field input:focus {
+  border-color: #7c7cf8;
+}
+
+/* List Item Cards */
+.inbox-item-card {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+
+.inbox-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+/* Color codes for Note & Task */
+.inbox-item-card.note { border-left: 6px solid #ffcc00; }
+.inbox-item-card.task { border-left: 6px solid #7c7cf8; }
+
+/* Checkbox Style */
+.task-checkbox {
+  width: 22px;
+  height: 22px;
+  margin-top: 5px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: #7c7cf8;
+}
+
+/* Content Area */
+.item-content {
+  flex: 1;
+}
+
+.type-tag {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  letter-spacing: 1px;
+}
+
+.note-display-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #2d3436;
+  margin: 5px 0;
+}
+
+.item-content p {
+  font-size: 15px;
+  color: #636e72;
+  line-height: 1.5;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.item-time {
+  font-size: 11px;
+  color: #b2bec3;
+  margin-top: 8px;
+  display: block;
+}
+
+/* Delete Button */
+.del-btn {
+  background: #fff0f0;
+  color: #ff7675;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.del-btn:hover {
+  background: #ff7675;
+  color: white;
+}
+
+/* Floating Plus Button */
+.floating-plus-btn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: #7c7cf8;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(124, 124, 248, 0.4);
 }
