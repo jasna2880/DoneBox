@@ -25,7 +25,6 @@ DoneBox is a modern, minimalist Productivity & Task Management application built
    ```bash
    git clone [https://github.com/jasna2880/DoneBox.git](https://github.com/jasna2880/DoneBox.git)
 
-   ##📸 Screenshots:
-   <img width="1901" height="938" alt="Screenshot 2026-02-09 153805" src="https://github.com/user-attachments/assets/84377902-b965-4ab1-9810-aacfbc5d635a" />
+
 
    
